@@ -47,12 +47,6 @@ workflows:
     artifacts:
       - build/Release-iphoneos/$XCODE_SCHEME.app
       - $XCODE_SCHEME-unsigned.ipa
-    
-    publishing:
-      email:
-        notify:
-          success: true
-          failure: true
 
   ios-build-and-test:
     name: iOS Build & Test
