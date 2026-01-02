@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+/* Begin PBXBuildFile section */
+		DA1234561234567890ABCDEF /* SecurityAuditApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE1; };
+		DA1234561234567890ABCDEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE2; };
+		DA1234561234567890ABCDEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE3; };
+		DA1234561234567890ABCDEF /* ChecksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE4; };
+		DA1234561234567890ABCDEF /* CheckDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE5; };
+		DA1234561234567890ABCDEF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE6; };
+		DA1234561234567890ABCDEF /* SecurityCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE7; };
+		DA1234561234567890ABCDEF /* SecurityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE8; };
+		DA1234561234567890ABCDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDE9; };
+		DA1234561234567890ABCDEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1234561234567890ABCDEA; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA1234561234567890ABCDE1 /* SecurityAuditApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityAuditApp.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE4 /* ChecksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecksView.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE5 /* CheckDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDetailView.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE7 /* SecurityCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCheck.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE8 /* SecurityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityChecker.swift; sourceTree = "<group>"; };
+		DA1234561234567890ABCDE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA1234561234567890ABCDEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA1234561234567890ABCDEB /* SecurityAudit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecurityAudit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1234561234567890ABCDEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA1234561234567890ABCDED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA1234561234567890ABCDEE /* SecurityAudit */ = {
+			isa = PBXGroup;
+			children = (
+				DA1234561234567890ABCDEF /* App */,
+				DA1234561234567890ABCDF0 /* Views */,
+				DA1234561234567890ABCDF1 /* Models */,
+				DA1234561234567890ABCDF2 /* Services */,
+				DA1234561234567890ABCDE9 /* Assets.xcassets */,
+				DA1234561234567890ABCDEC /* Info.plist */,
+			);
+			path = SecurityAudit;
+			sourceTree = "<group>";
+		};
+		DA1234561234567890ABCDEF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA1234561234567890ABCDE1 /* SecurityAuditApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA1234561234567890ABCDF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA1234561234567890ABCDE2 /* ContentView.swift */,
+				DA1234561234567890ABCDE3 /* HomeView.swift */,
+				DA1234561234567890ABCDE4 /* ChecksView.swift */,
+				DA1234561234567890ABCDE5 /* CheckDetailView.swift */,
+				DA1234561234567890ABCDE6 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA1234561234567890ABCDF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA1234561234567890ABCDE7 /* SecurityCheck.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA1234561234567890ABCDF2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA1234561234567890ABCDE8 /* SecurityChecker.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA1234561234567890ABCDF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA1234561234567890ABCDEB /* SecurityAudit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA1234561234567890ABCDF4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA1234561234567890ABCDEA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA1234561234567890ABCDF5 /* SecurityAudit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA1234561234567890ABCDF6 /* Build configuration list for PBXNativeTarget "SecurityAudit" */;
+			buildPhases = (
+				DA1234561234567890ABCDF7 /* Sources */,
+				DA1234561234567890ABCDED /* Frameworks */,
+				DA1234561234567890ABCDF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecurityAudit;
+			productName = SecurityAudit;
+			productReference = DA1234561234567890ABCDEB /* SecurityAudit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA1234561234567890ABCDF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					DA1234561234567890ABCDF5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = DA1234561234567890ABCDFA /* Build configuration list for PBXProject "SecurityAudit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA1234561234567890ABCDFB /* SecurityAudit */;
+			productRefGroup = DA1234561234567890ABCDF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA1234561234567890ABCDF5 /* SecurityAudit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA1234561234567890ABCDF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1234561234567890ABCDEF /* Preview Assets.xcassets in Resources */,
+				DA1234561234567890ABCDEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA1234561234567890ABCDF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1234561234567890ABCDEF /* SecurityAuditApp.swift in Sources */,
+				DA1234561234567890ABCDEF /* ContentView.swift in Sources */,
+				DA1234561234567890ABCDEF /* HomeView.swift in Sources */,
+				DA1234561234567890ABCDEF /* ChecksView.swift in Sources */,
+				DA1234561234567890ABCDEF /* CheckDetailView.swift in Sources */,
+				DA1234561234567890ABCDEF /* SettingsView.swift in Sources */,
+				DA1234561234567890ABCDEF /* SecurityCheck.swift in Sources */,
+				DA1234561234567890ABCDEF /* SecurityChecker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DA1234561234567890ABCDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_DIALECT = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_DIALECT = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_VARS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DA1234561234567890ABCDFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOLS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_DIALECT = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_DIALECT = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_VARS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA1234561234567890ABCDFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecurityAudit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cybercreators.security-audit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA1234561234567890ABCDFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecurityAudit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cybercreators.security-audit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA1234561234567890ABCDFA /* Build configuration list for PBXProject "SecurityAudit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1234561234567890ABCDFC /* Debug */,
+				DA1234561234567890ABCDFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA1234561234567890ABCDF6 /* Build configuration list for PBXNativeTarget "SecurityAudit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA1234561234567890ABCDFE /* Debug */,
+				DA1234561234567890ABCDFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA1234561234567890ABCDF9 /* Project object */;
+}

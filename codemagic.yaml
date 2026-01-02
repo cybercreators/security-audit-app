@@ -1,0 +1,118 @@
+workflows:
+  ios-unsigned-build:
+    name: iOS Unsigned IPA Build
+    instance_type: mac_mini_m1
+    max_build_duration: 60
+    
+    environment:
+      xcode: latest
+      vars:
+        XCODE_WORKSPACE: "SecurityAudit.xcworkspace"
+        XCODE_SCHEME: "SecurityAudit"
+        XCODE_PROJECT: "SecurityAudit.xcodeproj"
+        BUNDLE_ID: "com.cybercreators.security-audit"
+        APP_STORE_CONNECT_ISSUER_ID: $APP_STORE_CONNECT_ISSUER_ID
+        APP_STORE_CONNECT_KEY_IDENTIFIER: $APP_STORE_CONNECT_KEY_IDENTIFIER
+        APP_STORE_CONNECT_PRIVATE_KEY: $APP_STORE_CONNECT_PRIVATE_KEY
+      ios_signing:
+        provisioning_profiles:
+          - name: default_provisioning_profile
+            bundle_id: $BUNDLE_ID
+    
+    triggering:
+      events:
+        - push
+        - pull_request
+      branch:
+        include:
+          - main
+          - develop
+    
+    scripts:
+      - name: Install dependencies
+        script: |
+          cd $CM_BUILD_DIR
+          pod install --repo-update || true
+      
+      - name: Build unsigned IPA
+        script: |
+          cd $CM_BUILD_DIR
+          xcodebuild clean build \
+            -project $XCODE_PROJECT \
+            -scheme $XCODE_SCHEME \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_ENTITLEMENTS="" \
+            PROVISIONING_PROFILE="" \
+            PROVISIONING_PROFILE_SPECIFIER=""
+      
+      - name: Create unsigned IPA
+        script: |
+          cd $CM_BUILD_DIR
+          mkdir -p Payload
+          cp -r build/Release-iphoneos/$XCODE_SCHEME.app Payload/
+          zip -r -q $XCODE_SCHEME-unsigned.ipa Payload/
+          rm -rf Payload
+    
+    artifacts:
+      - build/Release-iphoneos/$XCODE_SCHEME.app
+      - $XCODE_SCHEME-unsigned.ipa
+    
+    publishing:
+      email:
+        recipients:
+          - $DEVELOPER_EMAIL
+        notify:
+          success: true
+          failure: true
+      github_releases:
+        release: true
+        doc_type: markdown
+        files:
+          - $XCODE_SCHEME-unsigned.ipa
+
+  ios-build-and-test:
+    name: iOS Build & Test
+    instance_type: mac_mini_m1
+    max_build_duration: 60
+    
+    environment:
+      xcode: latest
+      vars:
+        XCODE_PROJECT: "SecurityAudit.xcodeproj"
+        XCODE_SCHEME: "SecurityAudit"
+    
+    triggering:
+      events:
+        - pull_request
+      branch:
+        include:
+          - main
+          - develop
+    
+    scripts:
+      - name: Build for testing
+        script: |
+          cd $CM_BUILD_DIR
+          xcodebuild build-for-testing \
+            -project $XCODE_PROJECT \
+            -scheme $XCODE_SCHEME \
+            -configuration Debug \
+            -sdk iphoneos \
+            -derivedDataPath build
+      
+      - name: Run unit tests
+        script: |
+          cd $CM_BUILD_DIR
+          xcodebuild test-without-building \
+            -project $XCODE_PROJECT \
+            -scheme $XCODE_SCHEME \
+            -configuration Debug \
+            -sdk iphoneos \
+            -derivedDataPath build
+    
+    artifacts:
+      - build/Logs/Test/*.xcresult

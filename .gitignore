@@ -1,0 +1,60 @@
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.xcarchive
+*.dSYM.zip
+*.dSYM
+build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Xcode
+.DS_Store
+*.swp
+*~.nib
+*.pbxproj.bak
+
+# Environment
+.env
+.env.local
+*.pem
+*.p8
+*.p12
+
+# Build artifacts
+*.app
+*.ipa
+*.xcarchive
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swiftpm
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Codemagic
+codemagic.yaml.bak
