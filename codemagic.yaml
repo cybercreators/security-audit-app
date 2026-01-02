@@ -11,22 +11,15 @@ workflows:
         XCODE_SCHEME: "SecurityAudit"
         XCODE_PROJECT: "SecurityAudit.xcodeproj"
         BUNDLE_ID: "com.cybercreators.security-audit"
-        APP_STORE_CONNECT_ISSUER_ID: $APP_STORE_CONNECT_ISSUER_ID
-        APP_STORE_CONNECT_KEY_IDENTIFIER: $APP_STORE_CONNECT_KEY_IDENTIFIER
-        APP_STORE_CONNECT_PRIVATE_KEY: $APP_STORE_CONNECT_PRIVATE_KEY
-      ios_signing:
-        provisioning_profiles:
-          - name: default_provisioning_profile
-            bundle_id: $BUNDLE_ID
+        DEVELOPER_EMAIL: $DEVELOPER_EMAIL
     
     triggering:
       events:
         - push
-        - pull_request
-      branch:
-        include:
-          - main
-          - develop
+      branches:
+        - master
+        - main
+        - develop
     
     scripts:
       - name: Install dependencies
@@ -68,11 +61,6 @@ workflows:
         notify:
           success: true
           failure: true
-      github_releases:
-        release: true
-        doc_type: markdown
-        files:
-          - $XCODE_SCHEME-unsigned.ipa
 
   ios-build-and-test:
     name: iOS Build & Test
@@ -88,10 +76,10 @@ workflows:
     triggering:
       events:
         - pull_request
-      branch:
-        include:
-          - main
-          - develop
+      branches:
+        - master
+        - main
+        - develop
     
     scripts:
       - name: Build for testing
