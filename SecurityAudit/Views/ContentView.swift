@@ -17,11 +17,17 @@ struct ContentView: View {
                 }
                 .tag(1)
             
+            JailbreakCompatibilityView()
+                .tabItem {
+                    Label("Jailbreak", systemImage: "lock.open.fill")
+                }
+                .tag(2)
+            
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
-                .tag(2)
+                .tag(3)
         }
     }
 }
